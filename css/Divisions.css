@@ -1,0 +1,77 @@
+
+.main-div {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+img {
+    max-width: 500px;
+    height: auto;
+}
+
+.bigSmallContainer {
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.bigPart {
+    width: 60%;
+}
+
+.smallPart {
+    width: 30%;
+}
+
+.smallPart .bigPart {
+    margin: 1%;
+}
+
+img {
+    margin: 1%
+}
+@media only screen and (max-width: 1200px) { /* примерная ширина для медиа-запроса, можно изменить */
+    .bigSmallContainer {
+        flex-direction: column; /* изменено на ряд для больших экранов */
+        justify-content:center;
+        align-items:center;
+    }
+
+    .smallPart .bigPart {
+        margin: 1%;
+    }
+    .bigPart .smallPart {
+	text-align:center; 	
+    }
+
+    img {
+        margin: 1%;
+    }
+    .bigPart, .smallPart{
+    justify-content:center;
+        align-items:center;
+    	width:98%;
+    	text-align:center;
+    
+    }
+}
+
+.container-grid{
+    gap: 10px;
+    display: grid;
+    padding: 20px;
+    box-shadow: 0 0 10px #535353;
+    background-color: #375c97;
+}
+
+.report-button{
+    justify-self: end;
+    
+}

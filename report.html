@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Отправить отзыв</title>
+    <link rel="stylesheet" href="css/Layout.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Divisions.css">
+</head>
+<body>
+<header class="header">
+    <a class="hoverNoneA" href="Index.html">На главную</a>
+    <h1>Оставить отзыв</h1>
+</header>
+<form action="#">
+    <div class="container-grid">
+        <div class="pair">
+            <label for="seaName">Отправить отзыв на реку:</label>
+            <select name="seaName" id="seaName" class="select">
+                <option value="sir">Сирдарё</option>
+                <option value="panj">Панч</option>
+                <option value="zarafshon">Зарафшон</option>
+            </select>
+        </div>
+        <div class="pair">
+            <label for="theme">Тема:</label>
+            <input type="text" id="theme" name="theme">
+        </div>
+        <div class="pair">
+            <label for="content">Ваш отзыв:</label>
+            <textarea id="content" name="theme" class="textarea">
+                Реки таджикистана мне очень понравились!
+            </textarea>
+        </div>
+        <div class="pair-horizontal">
+            <input type="submit" value="Отправить отзыв">
+            <input type="reset" value="Сбросить" class="reset">
+        </div>
+    </div>
+</form>
+</body>
+</html>
